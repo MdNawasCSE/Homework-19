@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--CSS links-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <title>Regular</title>
+</head>
+
+<body>
+
+  <!-- Common Title -->
+  <section class="bg-dark p-3 my-2">
+    <div class="container-fluid">
+      <div class="row row-cols-auto justify-content-center">
+        <a class="btn btn-lg mx-5 manual " href="index.html">Home</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Common Title -->
+
+  <!-- Common Title -->
+  <section class="bg-info p-3 my-2">
+    <div class="container-fluid">
+      <div class="row row-cols-auto justify-content-center">
+        <a class="btn btn-lg btn-secondary" href="#">1.Content</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Common Title -->
+
+  <!-- practice Start -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg mx-3 border border-primary rounded">
+          For Example <code>&lt;Section&gt;</code> should be wrapped as inline
+
+          <p class="h1">h1. Bootstrap Heading</p>
+          <h3>Fancy Display heading
+            <small class="text-muted">With faded secondary text</small>
+          </h3>
+
+        </div>
+        <!-- Table start -->
+        <div class="col-lg mx-3 border border-primary rounded">
+          <table class="table table-bordered border-danger table-dark table-hover">
+            <thead>
+              <tr class="table-active">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="table-active">Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Table End -->
+      </div>
+    </div>
+  </section>
+  <!-- Practice End -->
+
+  <!-- Common Title -->
+  <section class="bg-info p-3 my-2">
+    <div class="container-fluid">
+      <div class="row row-cols-auto justify-content-center">
+        <a class="btn btn-lg btn-secondary" href="#">2.Form & validation</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Common Title -->
+  <!-- Form Start -->
+  <section>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="name" class="form-label">First name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter your email.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </section>
+  <!-- Form End -->
+  <!-- Js Links -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function(form) {
+          form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+
+</html>
